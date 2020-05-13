@@ -7,11 +7,17 @@
  */
 
 plugins {
+    id 'application'
+    
     // Apply the scala plugin to add support for Scala
     id 'scala'
 
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
+}
+
+application {
+    mainClassName = "qta.prog.one.Main"
 }
 
 repositories {
